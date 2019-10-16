@@ -1,0 +1,57 @@
+{% extends "common/base.html.twig" %}
+{% block title %}Search repositories on GitHub{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" type="text/css" href="/application/modules/github/views/includes/css/github_repositories_search.css">
+{% endblock %}
+{% block body %}
+    {{ parent() }}
+    <h2>Choose criteria to search by...</h2>
+    <div id="ruleaddeddiv">
+    </div>
+    <div class="row">
+        <div class="col-sm-3 col-md-3 col-lg-3">
+            <select id="field" class="form-control" placeholder="Field...">
+                <option value="" selected>Field...</option>
+                <option value="size">size</option>
+                <option value="forks">forks</option>
+                <option value="stars">stars</option>
+                <option value="followers">followers</option>
+            </select>
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3">
+            <select id="operator" class="form-control" placeholder="Operator...">
+                <option value="" selected>Operator...</option>
+                <option value=">">></option>
+                <option value="<"><</option>
+                <option value="=">=</option>
+            </select>
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3">
+            <input id="value" type="number" class="form-control" placeholder="Value..."/>
+        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3">
+            <button class="btn btn-danger">Delete</button>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="btn-group col-sm-6 col-md-6 col-lg-6">
+            <div id="applydiv">
+                <button class="btn btn-info">Apply</button>
+            </div>
+            <div id="cleardiv">
+                <button class="btn btn-warning">Clear</button>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+            <div id="addrulediv">
+                <button class="btn btn-success">Add Rule</button>
+            </div>
+        </div>
+    </div>
+    {% block javascripts %}
+        {{ parent() }}
+        <script type="text/javascript" src="/application/modules/github/views/includes/js/github_repositories_search.js"></script>
+    {% endblock %}
+{% endblock %}

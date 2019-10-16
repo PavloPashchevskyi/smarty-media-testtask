@@ -1,0 +1,22 @@
+{
+    "name": "ppd/smarty-media-testtask",
+    "description": "The test task for Smarty media company",
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "Pavlo Pashchevskyi",
+            "email": "googalltooth@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Application\\": "application"
+        }
+    },
+    "keywords": ["test", "task", "company", "smarty", "media", "SmartyMedia"],
+    "type": "project",
+    "require": {
+        "twig/twig": "~1.0",
+        "mashape/unirest-php": "^3.0"
+    }
+}
