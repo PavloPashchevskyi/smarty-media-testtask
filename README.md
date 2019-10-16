@@ -3,7 +3,7 @@ This is testtask created by Pavlo Pashchevskyi for Smarty Media company.
 
 To install that program, please, do the following.
 
-1. Unpack the archive send to you by email to the directory, where your sites is located.
+1. Clone git repository via git clone from https://github.com/PavloPashchevskyi/smarty-media-testtask .
 2. In "var" directory of the project create "logs" directory, if it has not yet presented there
 3. In application/config/ directory copy options.sample.php file 
     to the same directory, but with the name of "options.php" 
