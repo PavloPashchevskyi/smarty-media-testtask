@@ -16,7 +16,7 @@
     "keywords": ["test", "task", "company", "smarty", "media", "SmartyMedia"],
     "type": "project",
     "require": {
-        "twig/twig": "~1.0",
+        "twig/twig": "~3.11",
         "mashape/unirest-php": "^3.0"
     }
 }
